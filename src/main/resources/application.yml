@@ -1,0 +1,15 @@
+spring:
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+
+  datasource:
+    driver-class-name: ${DATABASE_DRIVER:org.h2.Driver}
+    password: ${DATABASE_PASSWORD:password}
+    url: ${DATABASE_URL:jdbc:h2:mem:fds}
+    username: ${DATABASE_USERNAME:sa}
+
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true

@@ -1,0 +1,11 @@
+POST http://localhost:8080/v1/issues
+content-type: application/json
+
+{
+    "title": "Problemas na via",
+    "description": "VIa com muitos buracos",
+    "date": "2021-06-27",
+    "neighborhood": "Partenon",
+    "street": "Bento",
+    "category": "BURACO_NA_VIA"
+}
